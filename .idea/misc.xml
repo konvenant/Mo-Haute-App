@@ -1,0 +1,44 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/drawable/addition.xml" value="0.1515" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/drawable/ade.xml" value="0.1" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/drawable/button2_drawable.xml" value="0.1" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/drawable/button_drawable.xml" value="0.1" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/drawable/cursor.xml" value="0.1" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/drawable/edit_draawable.xml" value="0.1" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/drawable/edit_draawable2.xml" value="0.1" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/drawable/edit_draawable3.xml" value="0.1" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1515" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/drawable/ic_baseline_help_24.xml" value="0.1" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/drawable/ic_baseline_login_24.xml" value="0.1" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/drawable/logo_drawable.xml" value="0.1" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/drawable/text_click.xml" value="0.1" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/layout/activity_main.xml" value="0.203125" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/layout/custom_row.xml" value="0.33" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/layout/fragment_add_user.xml" value="0.33" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/layout/fragment_choice.xml" value="0.2" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/layout/fragment_first_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/layout/fragment_home.xml" value="0.17" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/layout/fragment_login.xml" value="0.18342391304347827" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/layout/fragment_second_splash.xml" value="0.22" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/layout/fragment_sign_in_two.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/layout/fragment_sign_up.xml" value="0.22" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/layout/fragment_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/layout/fragment_third_splash.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/layout/fragment_update.xml" value="0.33" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/layout/fragment_view_pager.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/layout/nav_header_layout.xml" value="0.16077898550724637" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MoHaute/app/src/main/res/menu/nav_menu.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

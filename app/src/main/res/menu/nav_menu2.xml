@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Local Storage"
+        android:icon="@drawable/ic_baseline_sd_storage_24"
+        android:iconTint="#FFC107"/>
+    <item
+        android:id="@+id/details"
+        android:title="My Details"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:iconTint="#FFC107"/>
+
+    <item
+        android:id="@+id/Setting"
+        android:title="Settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:iconTint="#FFC107"/>
+    <item
+        android:id="@+id/help"
+        android:title="Help"
+        android:icon="@drawable/ic_baseline_help_24"
+        android:iconTint="#FFC107"/>
+    <item
+        android:id="@+id/notice"
+        android:title="Notice"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:iconTint="#FFC107"/>
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:iconTint="#FFC107"/>
+
+
+</menu>

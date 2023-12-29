@@ -1,0 +1,1288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HelpFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:theme="@style/Theme.MoHaute.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="15dp"
+                android:text="Help"
+                android:textColor="@color/mohaute"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="65dp"
+                android:layout_height="62dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo" />
+
+            <ImageButton
+                android:id="@+id/backClick"
+                android:layout_width="43dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_chevron_left_24"
+                app:tint="@color/mohaute"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scroll_bar"
+        android:layout_width="409dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="1dp"
+        android:background="#F6E8BE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="2dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:focusable="true"
+                app:cardCornerRadius="8dp">
+
+                <TextView
+                    android:id="@+id/tv_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:padding="16dp"
+                    android:text="Hello Thayeh, How can we help You"
+                    android:textColor="#061851"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="2dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:focusable="true"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:padding="16dp"
+                            android:text="Self-service"
+                            android:textColor="#061851"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/icon_holder"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_login" />
+
+                            <TextView
+                                android:layout_width="45dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="Report Failed Transaction"
+                                android:textColor="#083050"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/icon_holder"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_login" />
+
+                            <TextView
+                                android:layout_width="45dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="Report Failed Transaction"
+                                android:textColor="#083050"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/icon_holder"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_login" />
+
+                            <TextView
+                                android:layout_width="45dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="Report Failed Transaction"
+                                android:textColor="#083050"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/icon_holder"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_login"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:layout_width="45dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="Report Failed Transaction"
+                                android:textColor="#083050"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="30dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/icon_holder"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_login" />
+
+                            <TextView
+                                android:layout_width="45dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="Report Failed Transaction"
+                                android:textColor="#083050"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/icon_holder"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_login"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:layout_width="45dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="Report Failed Transaction"
+                                android:textColor="#083050"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/icon_holder"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_login" />
+
+                            <TextView
+                                android:layout_width="45dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="Report Failed Transaction"
+                                android:textColor="#083050"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/icon_holder"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_login"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:layout_width="45dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="Report Failed Transaction"
+                                android:textColor="#083050"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    ///
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="2dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:focusable="true"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/choose_card"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="11dp"
+                                android:fontFamily="sans-serif"
+                                android:text="Card"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:id="@+id/card_indicator"
+                                android:layout_width="30dp"
+                                android:layout_height="5dp"
+                                android:background="@color/mohaute" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="70dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/enter_transfer_options"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="11dp"
+                                android:fontFamily="sans-serif"
+                                android:text="Transfer"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                 />
+
+                            <View
+                                android:id="@+id/transfer_indicator"
+                                android:layout_width="50dp"
+                                android:layout_height="5dp"
+                                android:background="@color/mohaute"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/enter_account_options"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="11dp"
+                                android:fontFamily="sans-serif"
+                                android:text="Account"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                 />
+
+                            <View
+                                android:id="@+id/account_indicator"
+                                android:layout_width="50dp"
+                                android:layout_height="5dp"
+                                android:background="@color/mohaute"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/card_options"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="sans-serif"
+                                android:text="1"
+                                android:textColor="@color/red"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="30dp"
+                                android:fontFamily="sans-serif"
+                                android:text="How to check my card status?"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:src="@drawable/baseline_chevron_right_24" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="190dp"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#E1D9D9" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="sans-serif"
+                                android:text="2"
+                                android:textColor="#C5550A"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="30dp"
+                                android:fontFamily="sans-serif"
+                                android:text="How to report card dispute?"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:src="@drawable/baseline_chevron_right_24" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="190dp"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#E1D9D9" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="sans-serif"
+                                android:text="3"
+                                android:textColor="#BF8C0B"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="30dp"
+                                android:fontFamily="sans-serif"
+                                android:text="How to activate my card?"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:src="@drawable/baseline_chevron_right_24" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="190dp"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#E1D9D9" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="sans-serif"
+                                android:text="4"
+                                android:textColor="#E8DB62"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="30dp"
+                                android:fontFamily="sans-serif"
+                                android:text="How to apply a Mo Haute card?"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:src="@drawable/baseline_chevron_right_24" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="190dp"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#E1D9D9" />
+
+                        <LinearLayout
+                            android:id="@+id/expand_card_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:fontFamily="sans-serif"
+                                    android:text="5"
+                                    android:textColor="#DCD5D1"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="30dp"
+                                    android:fontFamily="sans-serif"
+                                    android:text="What should i do if i lose my card?"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:src="@drawable/baseline_chevron_right_24" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="190dp"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="#E1D9D9" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:fontFamily="sans-serif"
+                                    android:text="6"
+                                    android:textColor="#CCBFB6"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="30dp"
+                                    android:fontFamily="sans-serif"
+                                    android:text="How to change my Physical Card PIN?"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:src="@drawable/baseline_chevron_right_24" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="190dp"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="#E1D9D9" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:fontFamily="sans-serif"
+                                    android:text="7"
+                                    android:textColor="#AEADAC"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="30dp"
+                                    android:fontFamily="sans-serif"
+                                    android:text="How to change my Virtual Card PIN?"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:src="@drawable/baseline_chevron_right_24" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="190dp"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="#E1D9D9" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:fontFamily="sans-serif"
+                                    android:text="8"
+                                    android:textColor="#878482"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="30dp"
+                                    android:fontFamily="sans-serif"
+                                    android:text="Why did i get error messages while activating my card or changing my
+                                card pin?"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:src="@drawable/baseline_chevron_right_24" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/expand_card"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="sans-serif"
+                                android:text="Expand All"
+                                android:textColor="#918C8C" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:src="@drawable/baseline_keyboard_arrow_down_24"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/transfer_options"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="sans-serif"
+                                android:text="1"
+                                android:textColor="@color/red"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="30dp"
+                                android:fontFamily="sans-serif"
+                                android:text="How to check my card status?"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:src="@drawable/baseline_chevron_right_24" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="190dp"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#E1D9D9" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="sans-serif"
+                                android:text="2"
+                                android:textColor="#C5550A"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="30dp"
+                                android:fontFamily="sans-serif"
+                                android:text="How to report card dispute?"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:src="@drawable/baseline_chevron_right_24" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+<!--                    account-->
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/account_options"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="sans-serif"
+                                android:text="1"
+                                android:textColor="@color/red"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="30dp"
+                                android:fontFamily="sans-serif"
+                                android:text="How to check my card status?"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:src="@drawable/baseline_chevron_right_24" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="190dp"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#E1D9D9" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="sans-serif"
+                                android:text="2"
+                                android:textColor="#C5550A"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="30dp"
+                                android:fontFamily="sans-serif"
+                                android:text="How to report card dispute?"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:src="@drawable/baseline_chevron_right_24" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="190dp"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#E1D9D9" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="sans-serif"
+                                android:text="3"
+                                android:textColor="#BF8C0B"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="30dp"
+                                android:fontFamily="sans-serif"
+                                android:text="How to activate my card?"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:src="@drawable/baseline_chevron_right_24" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="190dp"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#E1D9D9" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="sans-serif"
+                                android:text="4"
+                                android:textColor="#E8DB62"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="30dp"
+                                android:fontFamily="sans-serif"
+                                android:text="How to apply a Mo Haute card?"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:src="@drawable/baseline_chevron_right_24" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="190dp"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#E1D9D9" />
+
+                        <LinearLayout
+                            android:id="@+id/expand_account_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:fontFamily="sans-serif"
+                                    android:text="5"
+                                    android:textColor="#DCD5D1"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="30dp"
+                                    android:fontFamily="sans-serif"
+                                    android:text="What should i do if i lose my card?"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:src="@drawable/baseline_chevron_right_24" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="190dp"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="#E1D9D9" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/expand_account"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="sans-serif"
+                                android:text="Expand All"
+                                android:textColor="#918C8C" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:src="@drawable/baseline_keyboard_arrow_down_24" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:focusable="true"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Mo Haute Customer Server"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="190dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="#E1D9D9" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/logo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:fontFamily="sans-serif"
+                                android:text="www.mohaute.com"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/logo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:fontFamily="sans-serif"
+                                android:text="www.mohaute.com"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll_bar"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/logo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mohaute"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:text="Live Chat"/>
+
+            <View
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="2dp"
+                android:background="#D6D5D1"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/logo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mohaute"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:text="Report an issue"/>
+
+            <View
+                android:layout_marginStart="60dp"
+                android:layout_width="2dp"
+                android:background="#D6D5D1"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

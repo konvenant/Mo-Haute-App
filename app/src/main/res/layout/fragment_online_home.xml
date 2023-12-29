@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F8C52B"
+    tools:context=".OnlineHomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#FFC107"
+        android:theme="@style/Theme.MoHaute.AppBarOverlay"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/Theme.MoHaute.PopupOverlay"
+        app:subtitle="sub"
+        tools:layout_editor_absoluteX="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="1dp"
+                android:text=""
+                android:ellipsize="start"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="185dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="35dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="65dp"
+                android:layout_height="62dp"
+                android:layout_alignParentStart="true"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/logo_drawable"
+                />
+
+            <ImageButton
+                android:id="@+id/notification"
+                android:layout_width="43dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#FFC107"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_notifications_24"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/menuClick"
+                android:layout_width="43dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#FFC107"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/onlineRecycleView"
+        android:layout_width="417dp"
+        android:layout_height="605dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F6CF59"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvnull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

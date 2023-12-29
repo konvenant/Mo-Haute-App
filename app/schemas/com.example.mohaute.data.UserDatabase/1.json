@@ -1,0 +1,118 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "5555bcbecab76a14ad1975079ca4b86c",
+    "entities": [
+      {
+        "tableName": "user_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `customerName` TEXT NOT NULL, `currentDate` TEXT NOT NULL, `shoulder` REAL NOT NULL, `sleeve` REAL NOT NULL, `neck` REAL NOT NULL, `chest` REAL NOT NULL, `tommy` REAL NOT NULL, `top` REAL NOT NULL, `bicep` REAL NOT NULL, `cuff` REAL NOT NULL, `waist` REAL NOT NULL, `thigh` REAL NOT NULL, `trouser` REAL NOT NULL, `ankle` REAL NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customerName",
+            "columnName": "customerName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currentDate",
+            "columnName": "currentDate",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shoulder",
+            "columnName": "shoulder",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sleeve",
+            "columnName": "sleeve",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "neck",
+            "columnName": "neck",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "chest",
+            "columnName": "chest",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tommy",
+            "columnName": "tommy",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "top",
+            "columnName": "top",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bicep",
+            "columnName": "bicep",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cuff",
+            "columnName": "cuff",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "waist",
+            "columnName": "waist",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "thigh",
+            "columnName": "thigh",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trouser",
+            "columnName": "trouser",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ankle",
+            "columnName": "ankle",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '5555bcbecab76a14ad1975079ca4b86c')"
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rvRecylerView"
+    android:layout_marginStart="39dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginBottom="2dp"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:elevation="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="350dp"
+        android:layout_height="85dp"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:id="@+id/noticeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person"
+            android:padding="4dp"
+            android:text=" Adeiza"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.059"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.019" />
+
+        <TextView
+            android:id="@+id/shoulderAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="2dp"
+            android:text="Shoulder: "
+            android:textColor="@color/black"
+            android:textStyle="normal|bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/noticeName" />
+
+        <TextView
+            android:id="@+id/shoulderText"
+            android:layout_width="30dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/addition"
+            android:backgroundTint="#FFC107"
+            android:text="12"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/shoulderAdd"
+            app:layout_constraintTop_toBottomOf="@+id/noticeName" />
+
+        <TextView
+            android:id="@+id/timeStamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="3dp"
+            android:fontFamily="monospace"
+            android:paddingBottom="10dp"
+            android:text="21:11:11"
+            android:textColor="#FF9800"
+            android:textSize="10sp"
+            android:maxLength="25"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.119"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shoulderAdd" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

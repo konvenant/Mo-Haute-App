@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.mohaute.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_choiceFragment"
+            app:destination="@id/choiceFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.mohaute.onBoarding.screen.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_choiceFragment"
+            app:destination="@id/choiceFragment"
+            app:popUpTo="@id/viewPagerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mohaute.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addUserFragment"
+            app:destination="@id/addUserFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addUserFragment"
+        android:name="com.example.mohaute.AddUserFragment"
+        android:label="fragment_add_user"
+        tools:layout="@layout/fragment_add_user" >
+        <action
+            android:id="@+id/action_addUserFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.mohaute.UpdateFragment"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_updateFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_updateFragment_to_backupLoginFragment"
+            app:destination="@id/backupLoginFragment" />
+        <argument
+            android:name="update"
+            app:argType="com.example.mohaute.model.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/choiceFragment"
+        android:name="com.example.mohaute.ChoiceFragment"
+        android:label="fragment_choice"
+        tools:layout="@layout/fragment_choice" >
+        <action
+            android:id="@+id/action_choiceFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/choiceFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_choiceFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.mohaute.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_choiceFragment"
+            app:destination="@id/choiceFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_signInTwoFragment"
+            app:destination="@id/signInTwoFragment"
+            app:popUpTo="@id/signUpFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.mohaute.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_onlineHomeFragment"
+            app:destination="@id/onlineHomeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_signInTwoFragment"
+            app:destination="@id/signInTwoFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInTwoFragment"
+        android:name="com.example.mohaute.SignInTwoFragment"
+        android:label="fragment_sign_in_two"
+        tools:layout="@layout/fragment_sign_in_two" >
+        <action
+            android:id="@+id/action_signInTwoFragment_to_choiceFragment"
+            app:destination="@id/choiceFragment" />
+        <argument
+            android:name="email"
+            app:argType="com.example.mohaute.data.UserEmail"
+            />
+        <action
+            android:id="@+id/action_signInTwoFragment_to_onlineHomeFragment"
+            app:destination="@id/onlineHomeFragment"
+            app:popUpTo="@id/signInTwoFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/onlineHomeFragment"
+        android:name="com.example.mohaute.OnlineHomeFragment"
+        android:label="fragment_online_home"
+        tools:layout="@layout/fragment_online_home" >
+        <action
+            android:id="@+id/action_onlineHomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/onlineHomeFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="details"
+            app:argType="com.example.mohaute.data.UserDetails"
+            />
+        <action
+            android:id="@+id/action_onlineHomeFragment_to_updateOnlineFragment"
+            app:destination="@id/updateOnlineFragment" />
+        <action
+            android:id="@+id/action_onlineHomeFragment_to_addOnlineFragment"
+            app:destination="@id/addOnlineFragment" />
+        <action
+            android:id="@+id/action_onlineHomeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_onlineHomeFragment_to_updateUserFragment"
+            app:destination="@id/updateUserFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_onlineHomeFragment_to_signInTwoFragment"
+            app:destination="@id/signInTwoFragment"
+            app:popUpTo="@id/onlineHomeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_onlineHomeFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_onlineHomeFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_onlineHomeFragment_to_noticeFragment"
+            app:destination="@id/noticeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateOnlineFragment"
+        android:name="com.example.mohaute.UpdateOnlineFragment"
+        android:label="fragment_update_online"
+        tools:layout="@layout/fragment_update_online" >
+        <action
+            android:id="@+id/action_updateOnlineFragment_to_onlineHomeFragment"
+            app:destination="@id/onlineHomeFragment"
+            app:popUpTo="@id/onlineHomeFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="update"
+            app:argType="com.example.mohaute.data.Measurements"
+            />
+
+    </fragment>
+    <fragment
+        android:id="@+id/addOnlineFragment"
+        android:name="com.example.mohaute.AddOnlineFragment"
+        android:label="fragment_add_online"
+        tools:layout="@layout/fragment_add_online" >
+        <action
+            android:id="@+id/action_addOnlineFragment_to_onlineHomeFragment"
+            app:destination="@id/onlineHomeFragment"
+            app:popUpTo="@id/onlineHomeFragment"
+            app:popUpToInclusive="true" />
+
+        <argument
+            android:name="userid"
+            app:argType="com.example.mohaute.data.UserId"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/updateUserFragment"
+        android:name="com.example.mohaute.UpdateUserFragment"
+        android:label="fragment_update_user"
+        tools:layout="@layout/fragment_update_user" >
+        <action
+            android:id="@+id/action_updateUserFragment_to_onlineHomeFragment"
+            app:destination="@id/onlineHomeFragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="detail"
+            app:argType="com.example.mohaute.data.UserDetails"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.mohaute.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/backupLoginFragment"
+        android:name="com.example.mohaute.BackupLoginFragment"
+        android:label="fragment_backup_login"
+        tools:layout="@layout/fragment_backup_login" >
+        <action
+            android:id="@+id/action_backupLoginFragment_to_backupAddMeasurementFragment"
+            app:destination="@id/backupAddMeasurementFragment"
+            app:popUpTo="@id/backupLoginFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="backup"
+            app:argType="com.example.mohaute.data.AddMeasurements"
+            />
+        <action
+            android:id="@+id/action_backupLoginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/backupAddMeasurementFragment"
+        android:name="com.example.mohaute.BackupAddMeasurementFragment"
+        android:label="fragment_backup_add_measurement"
+        tools:layout="@layout/fragment_backup_add_measurement" >
+        <action
+            android:id="@+id/action_backupAddMeasurementFragment_to_onlineHomeFragment"
+            app:destination="@id/onlineHomeFragment"
+            app:popUpTo="@id/backupAddMeasurementFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="backup"
+            app:argType="com.example.mohaute.data.BackUp"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.mohaute.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" >
+        <action
+            android:id="@+id/action_helpFragment_to_onlineHomeFragment"
+            app:destination="@id/onlineHomeFragment" />
+        <argument
+            android:name="user"
+            app:argType="com.example.mohaute.data.UserDetails"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/noticeFragment"
+        android:name="com.example.mohaute.NoticeFragment"
+        android:label="fragment_notice"
+        tools:layout="@layout/fragment_notice" >
+        <argument
+            android:name="email"
+            app:argType="com.example.mohaute.data.Email" />
+    </fragment>
+
+</navigation>
